@@ -6,13 +6,22 @@
     "start": "expo start --dev-client",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "android:qa": "expo run:android --variant=qaDebug --app-id com.myappname.qa",
+    "android:qa-release": "expo run:android --variant=qaRelease --app-id com.myappname.qa",
+    "android:dev": "expo run:android --variant=developDebug --app-id com.myappname.develop",
+    "android:dev-release": "expo run:android --variant=developRelease --app-id com.myappname.develop",
+    "android:preproduction": "expo run:android --variant=preprodDebug --app-id com.myappname.preprod",
+    "android:preproduction-release": "expo run:android --variant=preprodRelease --app-id com.myappname.preprod",
+    "android:prod": "expo run:android --variant=prodDebug --app-id com.myappname",
+    "android:prod-release": "expo run:android --variant=prodRelease --app-id com.myappname"
   },
   "dependencies": {
     "expo": "~53.0.10",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
-    "react-native": "0.79.3"
+    "react-native": "0.79.3",
+    "react-native-config": "^1.5.5"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
